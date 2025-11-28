@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  /* PALETA ROVELLA (Prestigio) */
+  --color-navy-900: #0f172a; /* Azul Noche profundo */
+  --color-navy-800: #1e293b; /* Azul Pizarra */
+  
+  /* Dorado en lugar de Azul Eléctrico */
+  --color-gold-400: #fbbf24; /* Brillo */
+  --color-gold-500: #d4af37; /* Dorado Clásico (Metallic) */
+  --color-gold-600: #b4941f; /* Dorado Oscuro para hover */
+  
+  --color-text-main: #334155; /* Slate 700 */
+}

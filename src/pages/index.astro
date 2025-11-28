@@ -1,0 +1,314 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'; 
+---
+
+<Layout title="Rovella Spatafore, Pascual & Asoc. | Estudio Integral">
+
+    <Navbar />
+
+    <header class="relative pt-48 pb-32 bg-slate-50 overflow-hidden">
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gold-500/5 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/2 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+            
+            <div class="space-y-8 animate-fade-in-up">
+                <div class="inline-flex items-center gap-3 px-4 py-2 bg-white border border-slate-200 rounded-full shadow-sm">
+                    <div class="flex text-gold-500 text-sm">★★★★★</div>
+                    <span class="text-xs font-bold text-navy-900 uppercase tracking-wide">
+                        Récord: <span class="text-gold-600">151 Opiniones Positivas</span>
+                    </span>
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-serif text-navy-900 font-bold leading-tight">
+                    Sus números en orden.<br>
+                    Su patrimonio <span class="text-gold-600 italic">protegido.</span>
+                </h1>
+                
+                <p class="text-slate-600 text-lg leading-relaxed max-w-lg border-l-4 border-gold-500 pl-6">
+                    Soluciones integrales para empresas y particulares. 
+                    Desde la liquidación de impuestos hasta la administración de sus contratos. Todo en un solo lugar.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contable" class="bg-gold-500 text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-gold-600 transition-all shadow-xl shadow-gold-500/20">
+                        Área Contable
+                    </a>
+                    <a href="#legal" class="bg-navy-900 text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-navy-800 transition-all shadow-lg">
+                        Área Legal
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative h-[500px] rounded-sm overflow-hidden shadow-2xl border-8 border-white">
+                 <img 
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" 
+                    alt="Estudio Rovella Spatafore" 
+                    class="w-full h-full object-cover sepia-[0.1]"
+                />
+                <div class="absolute bottom-8 left-8 bg-navy-900 p-6 shadow-xl border-t-4 border-gold-500 max-w-xs">
+                    <p class="text-white font-serif italic text-lg">"Eficiencia y confianza. Hace años llevan mis papeles y alquileres."</p>
+                    <div class="flex items-center gap-2 mt-3">
+                        <div class="flex text-gold-500 text-xs">★★★★★</div>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase">Cliente Verificado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-serif text-navy-900 font-bold">Gestión Integral 360°</h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div id="contable" class="bg-slate-50 p-10 rounded-xl border border-slate-200 hover:border-gold-500 transition-all duration-300 group hover:shadow-xl">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 bg-navy-900 text-gold-500 rounded-sm flex items-center justify-center font-bold text-2xl shadow-lg">
+                            %
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-serif text-navy-900 font-bold">Estudio Contable</h3>
+                            <p class="text-xs text-gold-600 font-bold uppercase tracking-widest">Impuestos & Finanzas</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-4 text-slate-700">
+                        <li class="flex items-start gap-3 border-b border-slate-200 pb-3 last:border-0">
+                            <span class="text-gold-600 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-navy-900">Monotributo e IVA</strong>
+                                <span class="text-sm text-slate-500">Inscripciones, recategorizaciones y DDJJ.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 border-b border-slate-200 pb-3 last:border-0">
+                            <span class="text-gold-600 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-navy-900">Bienes Personales y Ganancias</strong>
+                                <span class="text-sm text-slate-500">Liquidación anual y planificación fiscal.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 border-b border-slate-200 pb-3 last:border-0">
+                            <span class="text-gold-600 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-navy-900">Sueldos y Cargas Sociales</strong>
+                                <span class="text-sm text-slate-500">Liquidación de haberes F.931 y certificados.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 border-b border-slate-200 pb-3 last:border-0">
+                            <span class="text-gold-600 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-navy-900">Gestión AFIP</strong>
+                                <span class="text-sm text-slate-500">Planes de pago, moratorias y atención de inspecciones.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="legal" class="bg-navy-900 p-10 rounded-xl border border-navy-800 hover:border-gold-500 transition-all duration-300 group hover:shadow-xl shadow-2xl text-white">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-14 h-14 bg-white text-navy-900 rounded-sm flex items-center justify-center font-bold text-2xl shadow-lg">
+                            ⚖️
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-serif text-white font-bold">Servicios Jurídicos</h3>
+                            <p class="text-xs text-gold-500 font-bold uppercase tracking-widest">Contratos & Propiedades</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-start gap-3 border-b border-white/10 pb-3 last:border-0">
+                            <span class="text-gold-500 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-white">Contratos y Alquileres</strong>
+                                <span class="text-sm opacity-80">Redacción, revisión y administración de propiedades.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 border-b border-white/10 pb-3 last:border-0">
+                            <span class="text-gold-500 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-white">Desalojos y Rescisiones</strong>
+                                <span class="text-sm opacity-80">Recupero de inmuebles y resolución de contratos.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 border-b border-white/10 pb-3 last:border-0">
+                            <span class="text-gold-500 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-white">Cobranzas</strong>
+                                <span class="text-sm opacity-80">Gestión de mora y ejecución de deudas.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 border-b border-white/10 pb-3 last:border-0">
+                            <span class="text-gold-500 font-bold">✓</span>
+                            <div>
+                                <strong class="block text-white">Asesoría General</strong>
+                                <span class="text-sm opacity-80">Consultoría legal para empresas y particulares.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="opiniones" class="py-24 bg-navy-900 text-white relative overflow-hidden border-y border-white/5">
+        
+        <div class="absolute top-0 left-0 w-full h-full opacity-5 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white to-transparent pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-full mb-8 backdrop-blur-sm">
+                    <div class="flex text-gold-400 text-sm gap-1">★★★★★</div>
+                    <span class="text-xs font-bold text-slate-300 uppercase tracking-widest">
+                        Excelencia en Google Maps
+                    </span>
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight">
+                    La confianza de <span class="text-gold-500">151 clientes</span> satisfechos.
+                </h2>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    La tranquilidad de nuestros clientes es nuestro mayor activo. Resultados comprobables tanto en gestión contable como en resolución de conflictos legales.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-[#151e2e] p-8 rounded-sm border border-white/5 hover:border-gold-500/30 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="flex text-gold-400 mb-4 text-sm">★★★★★</div>
+                    <p class="text-slate-300 italic mb-6 leading-relaxed text-sm">
+                        "Excelente atención. Llevan la contabilidad de mi negocio hace 5 años y jamás tuve un problema. Súper organizados y siempre atentos a los cambios de AFIP."
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-white/5">
+                        <div class="w-10 h-10 bg-navy-800 rounded-full flex items-center justify-center text-gold-500 font-bold text-xs border border-white/10">M</div>
+                        <div>
+                            <span class="block font-bold text-white text-xs uppercase tracking-wide">Marcelo D.</span>
+                            <span class="block text-[10px] text-slate-500 uppercase tracking-wider">Dueño de PyME</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#151e2e] p-8 rounded-sm border border-white/5 hover:border-gold-500/30 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="flex text-gold-400 mb-4 text-sm">★★★★★</div>
+                    <p class="text-slate-300 italic mb-6 leading-relaxed text-sm">
+                        "Me resolvieron un desalojo complicado en tiempo récord y recuperé mi propiedad impecable. Muy profesionales y claros en todo el proceso."
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-white/5">
+                        <div class="w-10 h-10 bg-navy-800 rounded-full flex items-center justify-center text-gold-500 font-bold text-xs border border-white/10">S</div>
+                        <div>
+                            <span class="block font-bold text-white text-xs uppercase tracking-wide">Silvia G.</span>
+                            <span class="block text-[10px] text-slate-500 uppercase tracking-wider">Propietaria</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#151e2e] p-8 rounded-sm border border-white/5 hover:border-gold-500/30 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="flex text-gold-400 mb-4 text-sm">★★★★★</div>
+                    <p class="text-slate-300 italic mb-6 leading-relaxed text-sm">
+                        "Un estudio integral de verdad. Me asesoraron con un contrato comercial y además me liquidan sueldos. Recomendables 100%."
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-white/5">
+                        <div class="w-10 h-10 bg-navy-800 rounded-full flex items-center justify-center text-gold-500 font-bold text-xs border border-white/10">R</div>
+                        <div>
+                            <span class="block font-bold text-white text-xs uppercase tracking-wide">Roberto F.</span>
+                            <span class="block text-[10px] text-slate-500 uppercase tracking-wider">Comerciante</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="#" target="_blank" class="inline-flex items-center gap-3 text-slate-400 hover:text-white transition-colors text-xs font-bold uppercase tracking-[0.2em] border-b border-transparent hover:border-gold-500 pb-1">
+                    <svg class="w-4 h-4 text-gold-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm6.868 6h-2v-3.781c0-.905-.324-1.521-1.131-1.521-.617 0-.984.416-1.146.817-.058.143-.073.343-.073.543v3.942h-2v-6h2v.859c.296-.456.825-1.109 2.012-1.109 1.469 0 2.57 1.121 2.57 3.529v2.721z"/></svg>
+                    Leer las 151 reseñas en Google
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-navy-900 text-slate-300 border-t-4 border-gold-500 font-sans text-sm relative overflow-hidden">
+        
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 py-16 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-serif text-2xl text-white font-bold tracking-wide">ROVELLA SPATAFORE</h3>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-gold-500 block mt-1 font-bold">Pascual & Asociados</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed text-sm border-l-2 border-gold-600 pl-4">
+                        Solidez contable y respaldo jurídico en un solo lugar. Más de 150 clientes avalan nuestra trayectoria.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-white/10 pb-2 inline-block">
+                        Impuestos & PyMEs
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#contable" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Monotributo e IIBB</a></li>
+                        <li><a href="#contable" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Liquidación de Sueldos</a></li>
+                        <li><a href="#contable" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Bienes Personales</a></li>
+                        <li><a href="#contable" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Gestión AFIP</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-white/10 pb-2 inline-block">
+                        Legales & Propiedades
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#legal" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Contratos y Alquileres</a></li>
+                        <li><a href="#legal" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Desalojos</a></li>
+                        <li><a href="#legal" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Cobranzas Judiciales</a></li>
+                        <li><a href="#legal" class="hover:text-gold-400 transition-colors hover:translate-x-1 duration-300 block"><span class="text-gold-600 mr-2">›</span> Asesoría General</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-white font-bold text-lg mb-6 border-b border-white/10 pb-2 inline-block">
+                        Oficinas
+                    </h4>
+                    <ul class="space-y-6">
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-gold-500 font-bold block mb-1">Dirección</span>
+                            <span class="block text-white">Calle Falsa 123, Piso 1</span>
+                            <span class="text-slate-500">Zona Comercial</span>
+                        </li>
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-gold-500 font-bold block mb-1">WhatsApp / Teléfono</span>
+                            <a href="https://wa.me/54911XXXXXXXX" class="text-lg text-white font-bold hover:text-gold-400 transition-colors tracking-wide block">
+                                11 XXXX-XXXX
+                            </a>
+                        </li>
+                        <li>
+                            <span class="text-xs uppercase tracking-widest text-gold-500 font-bold block mb-1">Email</span>
+                            <a href="mailto:info@rovellaspat.com" class="hover:text-white transition-colors">
+                                info@rovellaspat.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 mt-12 flex flex-col md:flex-row justify-between text-xs text-slate-500">
+                <p>&copy; 2025 Rovella Spatafore, Pascual & Asoc.</p>
+                <div class="flex gap-6 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-gold-500 transition-colors">Privacidad</a>
+                    <a href="#" class="hover:text-gold-500 transition-colors">Legales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</Layout>
