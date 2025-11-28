@@ -1,0 +1,54 @@
+---
+interface Props {
+    title: string;
+    answer: string;
+}
+const { title, answer } = Astro.props;
+const uniqueId = `faq-${Math.random().toString(36).substring(2, 9)}`;
+---
+
+<div id={`${uniqueId}-wrapper`} 
+    class="faq-item-wrapper bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:border-gold-500 transition-all duration-300 cursor-pointer group">
+    
+    <div id={`${uniqueId}-header`} class="faq-header flex justify-between items-center cursor-pointer">
+        <h4 class="font-bold text-navy-900 text-lg pr-4">{title}</h4>
+        <span id={`${uniqueId}-icon`} class="text-gold-500 text-2xl transform transition-transform duration-300 font-light flex-shrink-0">+</span>
+    </div>
+
+    <div id={`${uniqueId}-content`} class="faq-content overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out">
+        <p class="text-slate-600 pt-4 text-sm leading-relaxed border-t border-gray-100 mt-4">
+            {answer}
+        </p>
+    </div>
+</div>
+
+<script define:vars={{ uniqueId }}>
+    function initializeFAQ() {
+        const wrapper = document.getElementById(`${uniqueId}-wrapper`);
+        const header = document.getElementById(`${uniqueId}-header`);
+        const content = document.getElementById(`${uniqueId}-content`);
+        const icon = document.getElementById(`${uniqueId}-icon`);
+        
+        let isOpen = false;
+
+        if (!wrapper || !header || !content || !icon) return; 
+
+        function toggleAccordion() {
+            isOpen = !isOpen;
+
+            if (isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(45deg)';
+                wrapper.classList.add('border-gold-500', 'shadow-md');
+            } else {
+                content.style.maxHeight = '0';
+                icon.style.transform = 'rotate(0deg)';
+                wrapper.classList.remove('border-gold-500', 'shadow-md');
+            }
+        }
+
+        header.addEventListener('click', toggleAccordion);
+        content.style.maxHeight = '0';
+    }
+    setTimeout(initializeFAQ, 0); 
+</script>

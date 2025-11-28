@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro'; 
+import FAQItem from '../components/FAQItem.astro'; 
 ---
 
 <Layout title="Rovella Spatafore, Pascual & Asoc. | Estudio Integral">
@@ -30,13 +31,24 @@ import Navbar from '../components/Navbar.astro';
                     Desde la liquidación de impuestos hasta la administración de sus contratos. Todo en un solo lugar.
                 </p>
 
-                <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="#contable" class="bg-gold-500 text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-gold-600 transition-all shadow-xl shadow-gold-500/20">
-                        Área Contable
+                <div class="flex flex-col sm:flex-row gap-6 pt-8">
+                    
+                    <a href="#contable" class="group relative px-10 py-4 rounded-lg shadow-lg shadow-gold-500/30 hover:shadow-gold-500/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600"></div>
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/20 transition-colors duration-300"></div>
+                        
+                        <span class="relative z-10 flex items-center justify-center gap-3 text-navy-900 font-sans text-xs font-extrabold uppercase tracking-[0.15em]">
+                            <span class="text-lg">%</span> Gestión Contable
+                        </span>
                     </a>
-                    <a href="#legal" class="bg-navy-900 text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-navy-800 transition-all shadow-lg">
-                        Área Legal
+
+                    <a href="#legal" class="group relative px-10 py-4 rounded-lg bg-navy-900 border border-navy-800 hover:border-gold-500/50 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                        <span class="flex items-center justify-center gap-3 text-white font-sans text-xs font-bold uppercase tracking-[0.15em] group-hover:text-gold-100 transition-colors">
+                            <span class="text-gold-500 text-lg group-hover:scale-110 transition-transform duration-300">⚖️</span> 
+                            Servicios Legales
+                        </span>
                     </a>
+
                 </div>
             </div>
 
@@ -150,6 +162,67 @@ import Navbar from '../components/Navbar.astro';
                             </div>
                         </li>
                     </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-navy-900 font-bold mb-4">
+                    Dudas Frecuentes
+                </h2>
+                <div class="h-1 w-16 bg-gold-500 mx-auto mb-6"></div>
+                <p class="text-slate-500 text-lg max-w-2xl mx-auto">
+                    Resolvemos las inquietudes más comunes de comerciantes, propietarios y empresas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-gold-600 bg-gold-100 px-2 py-1 rounded text-xs font-bold uppercase tracking-widest">Área Contable</span>
+                    </div>
+
+                    <FAQItem 
+                        title="¿Realizan liquidación de sueldos y cargas sociales?" 
+                        answer="Sí. Gestionamos la liquidación mensual de haberes (F.931), altas y bajas de empleados, y confección de recibos de sueldo, asegurando el cumplimiento total de la normativa laboral vigente." 
+                    />
+                    
+                    <FAQItem 
+                        title="¿Cómo manejan las inscripciones a Monotributo e IIBB?" 
+                        answer="Nos ocupamos del alta completa en AFIP y Rentas. Analizamos su actividad para encuadrarlo en la categoría más eficiente y evitar costos innecesarios desde el primer día." 
+                    />
+
+                    <FAQItem 
+                        title="¿Atienden inspecciones o requerimientos de AFIP?" 
+                        answer="Absolutamente. Nuestro equipo contable se encarga de responder requerimientos, presentar descargos y regularizar deudas mediante planes de pago y moratorias vigentes." 
+                    />
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-navy-900 bg-slate-200 px-2 py-1 rounded text-xs font-bold uppercase tracking-widest">Área Legal</span>
+                    </div>
+
+                    <FAQItem 
+                        title="¿Se encargan de la administración de alquileres?" 
+                        answer="Sí. Ofrecemos un servicio integral que incluye la redacción del contrato, el cobro mensual del alquiler, la gestión de reclamos y el seguimiento de garantías. Usted cobra sin preocupaciones." 
+                    />
+
+                    <FAQItem 
+                        title="¿Qué sucede si tengo inquilinos morosos?" 
+                        answer="Actuamos de inmediato. Iniciamos la gestión extrajudicial (intimación) y, de ser necesario, procedemos con el desalojo y el cobro ejecutivo de alquileres adeudados para recuperar su propiedad rápidamente." 
+                    />
+
+                    <FAQItem 
+                        title="¿Realizan redacción de contratos comerciales?" 
+                        answer="Redactamos y revisamos todo tipo de contratos (locación, comodato, compraventa, sociedades) para blindar su patrimonio y evitar conflictos legales a futuro." 
+                    />
                 </div>
 
             </div>
@@ -310,5 +383,24 @@ import Navbar from '../components/Navbar.astro';
             </div>
         </div>
     </footer>
+
+    <a href="https://www.google.com/maps/place/..." target="_blank" class="fixed bottom-4 left-4 z-40 bg-white/90 backdrop-blur-md border border-slate-200 shadow-xl rounded-full px-4 py-2 flex items-center gap-3 group hover:scale-105 transition-transform duration-300 hidden md:flex">
+        <div class="bg-white p-1 rounded-full shadow-sm">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+        </div>
+        <div class="flex flex-col leading-none">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest group-hover:text-navy-900 transition-colors">Google Rating</span>
+            <span class="text-sm font-serif font-bold text-navy-900 flex items-center gap-1">
+                5.0 
+                <span class="text-yellow-400 text-xs">★★★★★</span>
+                <span class="text-slate-400 text-[10px] font-sans ml-1">(151)</span>
+            </span>
+        </div>
+    </a>
 
 </Layout>
